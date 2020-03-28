@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageview"
+        android:scaleType="fitXY"
+        android:src="@drawable/a6"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <Button
+        android:layout_below="@id/imageview"
+        android:id="@+id/buttonPrevious"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Previous"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/imageview"
+        android:id="@+id/next"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonPrevious"
+        android:id="@+id/random"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/random"
+        android:id="@+id/buttonAutoPrevious"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Auto Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/random"
+        android:id="@+id/buttonAutonext"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Auto Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
