@@ -7,13 +7,13 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageview"
+        android:id="@+id/ImageView"
         android:scaleType="fitXY"
         android:src="@drawable/a6"
         android:layout_width="match_parent"
         android:layout_height="200dp"/>
     <Button
-        android:layout_below="@id/imageview"
+        android:layout_below="@id/ImageView"
         android:id="@+id/buttonPrevious"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"/>
     <Button
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/imageview"
+        android:layout_below="@id/ImageView"
         android:id="@+id/next"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
@@ -32,7 +32,7 @@
     <Button
         android:layout_centerHorizontal="true"
         android:layout_below="@id/buttonPrevious"
-        android:id="@+id/random"
+        android:id="@+id/buttonrandom"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:text="Random"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"/>
     <Button
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/random"
+        android:layout_below="@id/buttonrandom"
         android:id="@+id/buttonAutoPrevious"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"/>
     <Button
         android:layout_alignParentRight="true"
-        android:layout_below="@id/random"
+        android:layout_below="@id/buttonrandom"
         android:id="@+id/buttonAutonext"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
